@@ -1,0 +1,20 @@
+What is the central question?
+Central question is to classify MRI Scans on the types of diseases ranging from L1 to L5. 
+
+Why is it important in context?
+It is important because it will fasten the examination process, prevent errors and help in early treatment.
+
+What would “success” look like?
+Success as of now would like the model is learning well on training data and giving good results in terms of accuracy.
+
+What variables are essential, and why?
+The model should have enough data to learn well, identify patterns and easily understand what level of disease which mri scan represents.
+
+Who will use the results?
+Anyone working in medical field can use the results.
+
+Is this realistic given constraints?
+I think so it is possible, if we use proper methods and high end computing, although training on image data is a bit tricky and time consuming but we can make it happen
+
+
+
