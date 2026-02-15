@@ -3,6 +3,8 @@ Central question is to classify MRI Scans on the types of diseases ranging from 
 
 Why is it important in context?
 It is important because it will fasten the examination process, prevent errors and help in early treatment.
+Time Horizon:
+Prediction occurs at the time of scan interpretation and supports clinical decision-making.
 
 What would “success” look like?
 Success as of now would like the model is learning well on training data and giving good results in terms of accuracy.
