@@ -1,18 +1,1 @@
-Database Management:
 
-To manage the lumbar spine MRI dataset, a simple relational database structure is designed to organize metadata associated with each MRI image. 
-Since the dataset consists of preprocessed and labeled MRI images, the primary structured entities include image information and diagnostic labels.
-The database consists of an Images table, which stores metadata for each MRI image such as a unique image identifier, file path, image dimensions. 
-Each image is associated with exactly one diagnostic label. A Labels table is used to store the possible classification categories (herniated disc, thecal sac involvement, and no stenosis). 
-
-There are two tables created: 
-- Train.csv
-- Test.csv
-
-The database structure can be represented as:
-
-Images (image_id, image_link, image_label)
-
-Basically, the project works with unstructured data in the form of MRI image files. 
-These image files are not stored directly in the database due to their large size.
-Instead, they are stored in the file system, and their locations are referenced through links stored in the Images table.
