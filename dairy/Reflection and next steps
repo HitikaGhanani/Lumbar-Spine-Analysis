@@ -1,4 +1,4 @@
-### 📌 Next Steps (After Data Exploration & Data Cleaning)
+## Next Steps (After Data Exploration & Data Cleaning)
 
 * Apply **data augmentation** to the training images to improve generalization and reduce overfitting (e.g., small rotations, slight zoom, brightness variation, and controlled noise).
 
