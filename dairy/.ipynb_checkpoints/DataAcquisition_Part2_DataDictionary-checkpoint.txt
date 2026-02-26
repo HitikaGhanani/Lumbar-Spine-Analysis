@@ -1,0 +1,15 @@
+This data dictionary describes the variables used in the lumbar
+spine MRI classification project. The dataset consists of preprocessed
+grayscale MRI images organized into class-labeled directories.
+Each image represents a single MRI slice and is associated with one diagnostic category.
+
+
+  attribute  | data type |     type    | subtype | num. nature |                        description
+-------------|----------------------------------------------------------------------------------------------------------------------
+image_id     |  string   | Qualitative | Nominal |      -      | A unique identifier for each MRI image derived from the file name.
+image_path   |  string   | Qualitative | Nominal |      -      | File path that indicates where the MRI image is stored in the dataset.
+image_width  |  integer  | Quantitative| Ratio   |   Discrete  | The width of the MRI image in pixels.
+image_height |  integer  | Quantitative| Ratio   |   Discrete  | The height of the MRI image in pixels.
+image_labels |  string   | Qualitative | Nominal |      -      | The diagnostic category assigned to the MRI image. Possible values are Herniated Disc, Thecal Sac, and No Stenosis. This is the target variable the model learns to predict.
+
+

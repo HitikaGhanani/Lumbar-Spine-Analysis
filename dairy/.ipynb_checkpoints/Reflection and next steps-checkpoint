@@ -1,0 +1,33 @@
+Next Steps :
+
+ - Apply data augmentation to the training images to improve generalization and reduce overfitting (e.g., small rotations, slight zoom, brightness variation, and controlled noise).
+
+ - Perform a train–validation–test split at the patient level to prevent data leakage and ensure reliable performance evaluation.
+ 
+ - Select a baseline deep learning architecture with transfer learning (such as CNN, ResNet, DenseNet, or EfficientNet) and adapt the final layer for the three MRI classes:
+ 1. No stenosis
+ 2. Thecal sac compression
+ 3. Herniated disc
+
+ - Set up the training configuration, including loss function, optimizer, learning rate, batch size, number of epochs, and regularization strategies like early stopping or learning rate scheduling.
+
+ - Train the baseline model while monitoring training and validation performance to identify overfitting or underfitting.
+
+ - Evaluate performance on the validation set using clinically meaningful metrics:
+  1. Accuracy
+  2. Precision (per class)
+  3. Recall (per class)
+  4. Macro F1 score
+  5. Confusion matrix
+
+ - Run experiments with multiple model architectures under consistent training conditions to enable fair comparison.
+
+ - Select the best-performing model based on balanced performance across classes, with particular attention to accurate detection of pathological cases.
+
+ - Retrain the selected model using combined training and validation data for final learning.
+
+ - Conduct final evaluation on the test set to obtain unbiased performance metrics.
+
+ - Perform error analysis by reviewing misclassified MRI images to understand model weaknesses and identify improvement opportunities.
+
+ - Save the final trained model, along with preprocessing steps and class mappings, for future inference or deployment.
