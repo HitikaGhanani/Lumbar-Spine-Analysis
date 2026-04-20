@@ -1,0 +1,113 @@
+{
+    "CNN": {
+        "accuracy": 39.89,
+        "balanced_accuracy": 37.21,
+        "classification_report": {
+            "Herniated Disc": {
+                "precision": 0.5373134328358209,
+                "recall": 0.045,
+                "f1-score": 0.08304498269896193,
+                "support": 800.0
+            },
+            "No Stenosis": {
+                "precision": 0.569060773480663,
+                "recall": 0.11976744186046512,
+                "f1-score": 0.1978866474543708,
+                "support": 860.0
+            },
+            "Thecal Sac": {
+                "precision": 0.38194150063586263,
+                "recall": 0.9514255543822597,
+                "f1-score": 0.5450695704779189,
+                "support": 947.0
+            },
+            "accuracy": 0.3989259685462217,
+            "macro avg": {
+                "precision": 0.4961052356507822,
+                "recall": 0.3720643320809083,
+                "f1-score": 0.2753337335437505,
+                "support": 2607.0
+            },
+            "weighted avg": {
+                "precision": 0.49134699369550777,
+                "recall": 0.3989259685462217,
+                "f1-score": 0.2887607925632979,
+                "support": 2607.0
+            }
+        }
+    },
+    "ResNet18": {
+        "accuracy": 78.6,
+        "balanced_accuracy": 78.73,
+        "classification_report": {
+            "Herniated Disc": {
+                "precision": 0.7373167981961668,
+                "recall": 0.8175,
+                "f1-score": 0.7753408417308832,
+                "support": 800.0
+            },
+            "No Stenosis": {
+                "precision": 0.802158273381295,
+                "recall": 0.7779069767441861,
+                "f1-score": 0.7898465171192444,
+                "support": 860.0
+            },
+            "Thecal Sac": {
+                "precision": 0.8194130925507901,
+                "recall": 0.7666314677930306,
+                "f1-score": 0.7921440261865794,
+                "support": 947.0
+            },
+            "accuracy": 0.7859608745684695,
+            "macro avg": {
+                "precision": 0.7862960547094172,
+                "recall": 0.7873461481790723,
+                "f1-score": 0.7857771283455691,
+                "support": 2607.0
+            },
+            "weighted avg": {
+                "precision": 0.788528481898905,
+                "recall": 0.7859608745684695,
+                "f1-score": 0.7862297932128683,
+                "support": 2607.0
+            }
+        }
+    },
+    "EfficientNet-B0": {
+        "accuracy": 89.07,
+        "balanced_accuracy": 89.34,
+        "classification_report": {
+            "Herniated Disc": {
+                "precision": 0.813903743315508,
+                "recall": 0.95125,
+                "f1-score": 0.8772334293948126,
+                "support": 800.0
+            },
+            "No Stenosis": {
+                "precision": 0.9251533742331288,
+                "recall": 0.8767441860465116,
+                "f1-score": 0.9002985074626866,
+                "support": 860.0
+            },
+            "Thecal Sac": {
+                "precision": 0.941656942823804,
+                "recall": 0.8521647307286166,
+                "f1-score": 0.8946784922394678,
+                "support": 947.0
+            },
+            "accuracy": 0.8906789413118527,
+            "macro avg": {
+                "precision": 0.8935713534574803,
+                "recall": 0.8933863055917094,
+                "f1-score": 0.890736809698989,
+                "support": 2607.0
+            },
+            "weighted avg": {
+                "precision": 0.8970095977549057,
+                "recall": 0.8906789413118527,
+                "f1-score": 0.8911791300669493,
+                "support": 2607.0
+            }
+        }
+    }
+}
