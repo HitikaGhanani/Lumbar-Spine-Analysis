@@ -1,25 +1,58 @@
-Lumbar Spine MRI Dataset Analysis
+# Lumbar Spine MRI Dataset Analysis
 
-What is Lumbar Spinal Stenosis?
-Lumbar spinal stenosis is a medical condition characterized by narrowing of the spinal canal in the lower back (lumbar region, vertebrae L1-L5). This narrowing compresses the spinal cord and nerve roots, leading to pain, numbness, and other symptoms.
+## 🩻 What is Lumbar Spinal Stenosis?
 
-The Significance of the Topic
-Early diagnosis and classification of lumbar spinal stenosis depend on medical imaging research since it helps doctors choose the best course of action, so increasing long-term survival rates, preventing irreversible consequences, and improving patient outcomes.
+**Lumbar spinal stenosis** is a medical condition characterized by narrowing of the spinal canal in the lower back (lumbar region, vertebrae L1–L5). This narrowing can compress the spinal cord and nerve roots, potentially leading to pain, numbness, weakness, and other symptoms.
 
-This project focuses on organizing, managing, and analyzing a lumbar spine MRI dataset used for medical image classification. 
-The goal is to build a structured and reproducible data pipeline that supports understanding of the dataset and prepares it for future machine learning applications.
-The dataset contains MRI images grouped into three diagnostic categories that represent different structural conditions of the lumbar spine:
-- Herniated Disc: Lumbar disc herniation causing nerve compression
-- Thecal Sac Compression: Narrowing affecting the thecal sac space
-- No Stenosis: Normal lumbar spine without stenosis
-Each image is associated with metadata such as its label, and a public link to the image file.
+## 🔬 Significance of the Topic
 
-Key Features:
-- 13,686 preprocessed images ready for training
-- 3-class classification: Herniated Disc, Thecal Sac Compression, No Stenosis
-- Standardized resolution: 400×400×1 (grayscale)
+Early diagnosis and classification of lumbar spinal conditions through medical imaging can support clinical decision-making and help improve patient outcomes. Medical image analysis and machine learning can assist researchers in identifying patterns associated with different structural conditions of the lumbar spine.
 
-Data Structure:
+This project focuses on **organizing, managing, and analyzing a lumbar spine MRI dataset** for medical image classification.
+
+The goal is to build a **structured and reproducible data pipeline** that supports dataset exploration and prepares the data for future machine learning applications.
+
+---
+
+## 📊 Dataset Overview
+
+The dataset contains MRI images grouped into three diagnostic categories representing different structural conditions of the lumbar spine:
+
+| Category                   | Description                                             |
+| -------------------------- | ------------------------------------------------------- |
+| **Herniated Disc**         | Lumbar disc herniation that may cause nerve compression |
+| **Thecal Sac Compression** | Narrowing affecting the thecal sac space                |
+| **No Stenosis**            | Lumbar spine without evidence of spinal stenosis        |
+
+Each image is associated with metadata such as its **diagnostic label** and a **public link to the corresponding image file**.
+
+### Dataset Statistics
+
+* **13,686** preprocessed MRI images
+* **3-class classification**
+
+  * Herniated Disc
+  * Thecal Sac Compression
+  * No Stenosis
+* **Image resolution:** 400 × 400 × 1
+* **Image type:** Grayscale
+
+---
+
+## ✨ Key Features
+
+* 🗂️ Organized dataset structure for reproducible analysis
+* 🩻 Preprocessed lumbar spine MRI images
+* 🔢 Three diagnostic categories
+* 📐 Standardized image dimensions
+* 🔗 Image-level metadata and public image links
+* 🤖 Prepared for future machine learning and deep learning applications
+
+---
+
+## 📁 Data Structure
+
+```text
 lumbar-spinal-mri-dataset/
 │
 ├── train/
@@ -27,18 +60,57 @@ lumbar-spinal-mri-dataset/
 │   ├── thecal_sac/
 │   └── no_stenosis/
 │
-├── test/
-│   ├── herniated_disc/
-│   ├── thecal_sac/
-│   └── no_stenosis/
+└── test/
+    ├── herniated_disc/
+    ├── thecal_sac/
+    └── no_stenosis/
+```
 
-Citation:
+---
+
+## 🎯 Project Goals
+
+The primary goals of this project are to:
+
+1. **Organize** lumbar spine MRI images into a consistent directory structure.
+2. **Standardize** image dimensions and preprocessing.
+3. **Analyze** the distribution and characteristics of the dataset.
+4. **Document** the dataset structure and associated metadata.
+5. **Prepare** the dataset for future machine learning and deep learning experiments.
+
+---
+
+## 🚀 Future Work
+
+Potential extensions of this dataset include:
+
+* Exploratory data analysis and visualization
+* Data augmentation
+* Class imbalance analysis and mitigation
+* Training CNN-based classification models
+* Transfer learning using architectures such as **ResNet** and **EfficientNet**
+* Model evaluation using accuracy, precision, recall, F1-score, and ROC-AUC
+* Explainable AI techniques for medical image classification
+
+---
+
+## 📚 Citation
+
+If you use this dataset or build upon this project, please cite the original dataset:
+
+```bibtex
 @misc{abdullah_khan_2025,
-title={Lumbar Spinal MRI Dataset},
-url={https://www.kaggle.com/dsv/14332076},
-DOI={10.34740/KAGGLE/DSV/14332076},
-publisher={Kaggle},
-author={Abdullah Khan},
-year={2025}
+  title={Lumbar Spinal MRI Dataset},
+  url={https://www.kaggle.com/dsv/14332076},
+  DOI={10.34740/KAGGLE/DSV/14332076},
+  publisher={Kaggle},
+  author={Abdullah Khan},
+  year={2025}
 }
+```
 
+### Dataset Source
+
+**Abdullah Khan (2025). *Lumbar Spinal MRI Dataset*. Kaggle.**
+
+[View Dataset on Kaggle](https://www.kaggle.com/dsv/14332076)
